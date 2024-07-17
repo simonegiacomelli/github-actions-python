@@ -15,6 +15,6 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [project.optional-dependencies]
-test = ["pytest", "playwright"]
+test = ["pytest", "playwright", "pytest-playwright", "pytest-xvirt"]
 dev = ["webtypy", "playwright"]
 all = ["foo_package[test,dev]"]
