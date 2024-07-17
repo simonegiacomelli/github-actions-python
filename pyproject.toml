@@ -1,0 +1,3 @@
+[build-system]
+requires = ["pytest"]
+build-backend = "setuptools.build_meta"
