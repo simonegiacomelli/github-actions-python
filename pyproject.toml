@@ -6,5 +6,5 @@ build-backend = "setuptools.build_meta"
 name = "foo_package"
 version = "0.1"
 
-[tool.setuptools]
-packages = ["foo_package"]
+[tool.setuptools.packages.find]
+where = ["src"]
