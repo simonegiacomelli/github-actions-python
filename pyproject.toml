@@ -1,10 +1,11 @@
-[build-system]
-requires = ["setuptools", "wheel", "pytest"]
-build-backend = "setuptools.build_meta"
-
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/
 [project]
 name = "foo_package"
 version = "0.1"
+
+[build-system]
+requires = ["setuptools", "wheel", "pytest"]
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
