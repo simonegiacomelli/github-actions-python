@@ -5,10 +5,12 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.runs-on }}
     strategy:
       matrix:
         python: ["3.9", "3.10", "3.11"]
+        runs-on: [ ubuntu-latest, macos-13, windows-latest ]
+      fail-fast: false
 
     steps:
       - uses: actions/checkout@v4
