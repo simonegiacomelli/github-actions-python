@@ -4,7 +4,7 @@ name = "foo_package"
 version = "0.1"
 
 [build-system]
-requires = ["setuptools", "wheel", "pytest"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
