@@ -2,6 +2,10 @@
 [project]
 name = "foo_package"
 version = "0.1"
+dependencies = [
+    "tornado",
+    "watchdog"
+]
 
 [build-system]
 requires = ["setuptools", "wheel"]
@@ -9,3 +13,8 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.optional-dependencies]
+test = ["pytest", "playwright"]
+dev = ["webtypy", "playwright"]
+all = ["foo_package[test,dev]"]
